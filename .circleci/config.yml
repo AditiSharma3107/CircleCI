@@ -1,6 +1,12 @@
 # .circleci/config.yml
 version: 2.1
-
+on: 
+   pull_request:
+   push:
+     branches:
+     - master
+     - develop
+     
 jobs:
   build:
     docker:
